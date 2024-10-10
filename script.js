@@ -21,7 +21,7 @@ window.addEventListener("scroll", function () {
         zVals[i] += delta * -1.5; 
         var transform = `translateZ(${zVals[i]}px)`;
 
-        var opacity = zVals[i] < 200 ? 1 : 1 - parseInt((zVals[i] - 200) / 3000 * 10) / 10;
+        var opacity = zVals[i] < 200 ? 1 : 1 - parseInt((zVals[i] - 200) / 1500 * 10) / 10;
         var display = zVals[i] > 4000 ? "none" : "block"; 
 
         frame.style.transform = transform;
